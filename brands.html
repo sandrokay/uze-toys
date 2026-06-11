@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合作品牌 | UZE 优泽玩具</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; background-color: #0f172a; color: white; overflow-x: hidden; }
+        .font-toy { font-family: 'Fredoka', 'PingFang SC', sans-serif; }
+        .glass-nav { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .brand-detail-card { background: linear-gradient(180deg, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.8) 100%); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 2.5rem; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); backdrop-filter: blur(20px); }
+        .brand-detail-card:hover { transform: translateY(-6px); border-color: rgba(239, 68, 68, 0.4); box-shadow: 0 30px 60px rgba(239, 68, 68, 0.1); }
+        .secondary-brand-card { background: rgba(30, 41, 59, 0.4); border: 1px solid rgba(255,255,255,0.05); border-radius: 1.5rem; padding: 2rem; transition: all 0.3s ease; }
+        .secondary-brand-card:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.2); transform: translateY(-3px); }
+        .bullet-tag { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.85rem; color: #94a3b8; }
+        .step-circle { width: 3rem; height: 3rem; border-radius: 50%; background: #ef4444; color: white; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem; }
+    </style>
+</head>
+<body class="pb-24">
+
+    <div class="w-full fixed top-0 z-50 glass-nav">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between relative">
+            <div class="font-toy text-2xl font-bold text-red-500 tracking-wider">UZE</div>
+            <div class="hidden md:flex items-center space-x-10 text-sm font-bold">
+                <a href="index.html" class="text-slate-400 hover:text-white transition">首页</a>
+                <a href="about.html" class="text-slate-400 hover:text-white transition">关于优泽</a>
+                <a href="capabilities.html" class="text-slate-400 hover:text-white transition">运营能力</a>
+                <a href="brands.html" class="text-white border-b-2 border-red-500 pb-1">合作品牌</a>
+                <a href="contact.html" class="bg-red-600 text-white px-5 py-2 rounded-full hover:bg-red-700 transition">合作洽谈</a>
+            </div>
+            <button type="button" class="md:hidden w-10 h-10 rounded-full border border-slate-700 bg-slate-900/80 text-white text-xl font-bold shadow-sm" aria-label="打开菜单" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">☰</button>
+            <div id="mobile-menu" class="hidden md:hidden absolute left-6 right-6 top-full mt-3 rounded-2xl bg-slate-900/95 backdrop-blur-xl border border-slate-700 shadow-xl p-3 text-sm font-bold">
+                <a href="index.html" class="block px-4 py-3 rounded-xl text-slate-200 hover:bg-slate-800 hover:text-white">首页</a>
+                <a href="about.html" class="block px-4 py-3 rounded-xl text-slate-200 hover:bg-slate-800 hover:text-white">关于优泽</a>
+                <a href="capabilities.html" class="block px-4 py-3 rounded-xl text-slate-200 hover:bg-slate-800 hover:text-white">运营能力</a>
+                <a href="brands.html" class="block px-4 py-3 rounded-xl bg-red-600 text-white">合作品牌</a>
+                <a href="contact.html" class="block px-4 py-3 rounded-xl text-slate-200 hover:bg-slate-800 hover:text-white">合作洽谈</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="pt-40 pb-16 px-6 max-w-5xl mx-auto text-center">
+        <div class="inline-block px-4 py-1 rounded-full bg-slate-800 text-slate-300 text-sm font-bold tracking-widest uppercase mb-6 border border-slate-700">Brand Matrix</div>
+        <h1 class="text-5xl md:text-7xl font-black tracking-tight mb-6 text-white leading-tight">携手行业头部，<br/>筑牢大西南正版潮玩生态。</h1>
+        <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
+            优泽商贸近三十年来始终坚持“严选大牌、绝无仿冒”的原则。我们不仅是供货渠道，更是各大一线品牌在西南区域的深度战略共创伙伴，为其提供量身定制的动销方案。
+        </p>
+    </section>
+
+    <!-- 核心大厂 -->
+    <section class="max-w-6xl mx-auto px-6 mb-24 space-y-12">
+        <h2 class="text-3xl font-bold text-slate-100 border-l-4 border-red-500 pl-4 mb-8">独家战略核心大厂</h2>
+        
+        <!-- 卡游 -->
+        <div class="brand-detail-card p-8 md:p-12 flex flex-col lg:flex-row gap-12 items-center">
+            <div class="w-full lg:w-4/12 bg-white rounded-2xl p-8 flex items-center justify-center shadow-xl h-48">
+                <img src="184187628a00d167e0cc2a407f0c3f09.jpeg" alt="卡游 KAYOU" class="max-w-full max-h-full object-contain">
+            </div>
+            <div class="w-full lg:w-8/12">
+                <div class="flex flex-wrap gap-2 mb-4"><span class="bullet-tag">🥇 动漫衍生品巨头</span><span class="bullet-tag">🔥 现象级IP集卡</span></div>
+                <h3 class="text-3xl font-bold mb-4 text-white">卡游 KAYOU</h3>
+                <p class="text-slate-400 leading-relaxed mb-6">作为国内集换式卡牌及IP衍生品行业的绝对领军者，卡游承载了无数年轻玩家的热爱。优泽玩具作为其大西南区域的核心服务商，不仅打通了商超与下沉便利店的高频供货链路，更在川渝两地长效承办卡游官方全国巡回挑战赛。我们通过“竞技+社交”的沉浸式对战体验，将庞大的线上IP流量精准转化为实体门店的真实购买力。</p>
+                <div class="bg-slate-800/50 p-4 rounded-xl text-sm text-slate-300">
+                    <strong>主营IP矩阵：</strong>奥特曼系列、火影忍者、小马宝莉、叶罗丽等全线卡牌及周边文具。
+                </div>
+            </div>
+        </div>
+
+        <!-- 布鲁可 -->
+        <div class="brand-detail-card p-8 md:p-12 flex flex-col lg:flex-row gap-12 items-center">
+            <div class="w-full lg:w-4/12 bg-[#dc2626] rounded-2xl p-8 flex items-center justify-center shadow-xl h-48">
+                <img src="5df82040b317cfe840991e48edc08622.jpeg" alt="布鲁可" class="max-w-full max-h-full object-contain">
+            </div>
+            <div class="w-full lg:w-8/12">
+                <div class="flex flex-wrap gap-2 mb-4"><span class="bullet-tag">🧱 拼搭积木第一品牌</span><span class="bullet-tag">🤖 原创骨架研发</span></div>
+                <h3 class="text-3xl font-bold mb-4 text-white">布鲁可 BLOKS GROUP</h3>
+                <p class="text-slate-400 leading-relaxed mb-6">布鲁可是中国原创拼搭角色类玩具的领军者。针对其强大的国潮机甲和超级IP拼搭系列，优泽为其量身匹配了高知零售场景。我们深度输出直营专柜视觉陈列，助力布鲁可在西西弗、新华文轩等文化空间以及高端母婴渠道实现常态化的高毛利流转，彻底打破了传统积木只能在超市售卖的壁垒。</p>
+                <div class="bg-slate-800/50 p-4 rounded-xl text-sm text-slate-300">
+                    <strong>赋能成果：</strong>通过全场景中庭特装及线下互动拼搭体验区，大幅提升了品牌的区域渗透率与客单价。
+                </div>
+            </div>
+        </div>
+
+        <!-- 多美卡 -->
+        <div class="brand-detail-card p-8 md:p-12 flex flex-col lg:flex-row gap-12 items-center">
+            <div class="w-full lg:w-4/12 bg-white rounded-2xl p-8 flex items-center justify-center shadow-xl h-48">
+                <img src="7510eac1a995b25fc60d0e304ae0f092.jpeg" alt="多美卡 TOMICA" class="max-w-full max-h-full object-contain">
+            </div>
+            <div class="w-full lg:w-8/12">
+                <div class="flex flex-wrap gap-2 mb-4"><span class="bullet-tag">🏎️ 国民级合金车模</span><span class="bullet-tag">💎 收藏级高奢质感</span></div>
+                <h3 class="text-3xl font-bold mb-4 text-white">多美卡 TOMICA</h3>
+                <p class="text-slate-400 leading-relaxed mb-6">创立于1970年的日本微型合金小汽车品牌，在全球拥有横跨儿童至成人极客的全周期粉丝。针对其精密的产品特征，优泽玩具斥资为其定制了高端全透明背光LED精品展示柜。通过对卖场视觉的极致把控，我们让每一辆车模的工艺细节都完美呈现，使其成为高端百货与文旅地标中最耀眼的品类。</p>
+                <div class="bg-slate-800/50 p-4 rounded-xl text-sm text-slate-300">
+                    <strong>战略布局：</strong>突破传统货架，成功进驻川渝欢乐谷等景区定制网点，抢占亲子游乐消费第一线。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 扩充：二级优质品牌阵列（详细图文版） -->
+    <section class="max-w-6xl mx-auto px-6 mb-24">
+        <h2 class="text-3xl font-bold text-slate-100 border-l-4 border-red-500 pl-4 mb-8">优质代理与分销品牌</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="secondary-brand-card">
+                <h4 class="text-xl font-bold text-white mb-2">奥迪双钻 AULDEY</h4>
+                <p class="text-sm text-slate-400 leading-relaxed mb-4">中国动漫玩具绝对巨头。优泽全面操盘其《超级飞侠》、《巴啦啦小魔仙》等顶流IP系列在西南核心百货的系统性大铺货与陈列动销。</p>
+            </div>
+            <div class="secondary-brand-card">
+                <h4 class="text-xl font-bold text-white mb-2">森宝积木 SEMBO</h4>
+                <p class="text-sm text-slate-400 leading-relaxed mb-4">国产高阶积木代表品牌。依托优泽打造的“国潮军事大跨度视觉墙”，在各大连锁零售终端拥有极强的视觉统治力与男孩客群吸引力。</p>
+            </div>
+            <div class="secondary-brand-card">
+                <h4 class="text-xl font-bold text-white mb-2">美泰 Mattel</h4>
+                <p class="text-sm text-slate-400 leading-relaxed mb-4">全球顶级玩具巨擘。优泽作为重要流通渠道，长期保障其旗下芭比娃娃、风火轮（Hot Wheels）、侏罗纪恐龙等核心产品线的高效下沉。</p>
+            </div>
+            <div class="secondary-brand-card">
+                <h4 class="text-xl font-bold text-white mb-2">ZURU</h4>
+                <p class="text-sm text-slate-400 leading-relaxed mb-4">近年来风靡全球的潮流新锐。优泽快速响应其爆款“5倍惊喜盲盒”等网红产品，通过数字化智能仓配实现核心商圈的极速铺货与补给。</p>
+            </div>
+            <div class="secondary-brand-card">
+                <h4 class="text-xl font-bold text-white mb-2">锦佳工程玩具</h4>
+                <p class="text-sm text-slate-400 leading-relaxed mb-4">高品质合金工程车、消防车系列。优泽为其专属定制了沉浸式赛道地垫陈列，极大地延长了儿童在专柜的驻留与互动时间。</p>
+            </div>
+            <div class="secondary-brand-card flex flex-col justify-center items-center text-center border-dashed border-2 border-slate-600 hover:border-red-500">
+                <div class="text-3xl text-slate-500 mb-2">+</div>
+                <h4 class="text-lg font-bold text-slate-300">50+ 品牌矩阵</h4>
+                <p class="text-xs text-slate-500 mt-2">期待更多优质大牌入驻</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 新增板块：品牌入驻赋能流程 -->
+    <section class="max-w-6xl mx-auto px-6 mb-16">
+        <div class="bg-slate-800/40 rounded-3xl p-10 md:p-16 border border-slate-700">
+            <h2 class="text-3xl font-bold text-center text-white mb-4">合作品牌入驻与赋能流程</h2>
+            <p class="text-center text-slate-400 mb-12 max-w-2xl mx-auto">我们拒绝盲目铺货，采用科学严谨的“四步走”战略，确保每一个新入驻品牌都能在西南市场稳扎稳打，实现长效盈利。</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                <!-- 连线背景 (仅在电脑端显示) -->
+                <div class="hidden md:block absolute top-6 left-[10%] right-[10%] h-0.5 bg-slate-700 z-0"></div>
+                
+                <div class="relative z-10 flex flex-col items-center text-center">
+                    <div class="step-circle">1</div>
+                    <h4 class="font-bold text-white mb-2">需求匹配调研</h4>
+                    <p class="text-xs text-slate-400">解构品牌基因与目标客群，出具大西南区域市场分析与渠道准入报告。</p>
+                </div>
+                <div class="relative z-10 flex flex-col items-center text-center">
+                    <div class="step-circle">2</div>
+                    <h4 class="font-bold text-white mb-2">直营店陈列打样</h4>
+                    <p class="text-xs text-slate-400">在江津港龙等核心直营店进行首发试点，测试金牌视觉陈列与动销转化数据。</p>
+                </div>
+                <div class="relative z-10 flex flex-col items-center text-center">
+                    <div class="step-circle">3</div>
+                    <h4 class="font-bold text-white mb-2">全渠道精准铺货</h4>
+                    <p class="text-xs text-slate-400">依托茶园智配中心，向百货、文旅、文化空间等精准匹配的高潜力网点辐射分发。</p>
+                </div>
+                <div class="relative z-10 flex flex-col items-center text-center">
+                    <div class="step-circle">4</div>
+                    <h4 class="font-bold text-white mb-2">终端造势与裂变</h4>
+                    <p class="text-xs text-slate-400">策划落地特装DP点位、线下嘉年华及官方赛事，用体验经济引爆终端长尾复购。</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="contact.html" class="inline-block border border-red-500 text-red-400 hover:bg-red-600 hover:text-white px-8 py-3 rounded-full font-bold transition">成为合作品牌 →</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>运营能力 | UZE 优泽玩具</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; background-color: #fafafa; }
+        .font-toy { font-family: 'Fredoka', 'PingFang SC', sans-serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .feature-card { background: #fff; border-radius: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.02); border: 1px solid rgba(0,0,0,0.05); transition: all 0.4s; }
+        .feature-card:hover { transform: translateY(-5px); box-shadow: 0 30px 60px rgba(220,38,38,0.08); }
+        .dark-module { background: #0f172a; color: white; border-radius: 2.5rem; overflow: hidden; position: relative; }
+        .check-list li { position: relative; padding-left: 2.2rem; margin-bottom: 1.2rem; color: #475569; line-height: 1.6; }
+        .check-list li::before { content: '✓'; position: absolute; left: 0; top: 0.1rem; color: #ef4444; background: #fee2e2; width: 1.4rem; height: 1.4rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold; }
+        .dark-module .check-list li { color: #cbd5e1; }
+        .dark-module .check-list li::before { background: rgba(239,68,68,0.2); color: #f87171; }
+        .img-box { overflow: hidden; position: relative; }
+        .img-box img { transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+        .group:hover .img-box img { transform: scale(1.03); }
+    </style>
+</head>
+<body class="text-slate-800 pb-20">
+
+    <div class="w-full flex justify-center pt-6 px-6 fixed top-0 z-50">
+        <nav class="glass-nav px-8 py-3 flex items-center justify-between w-full max-w-5xl shadow-sm rounded-full relative">
+            <div class="font-toy text-2xl font-bold text-red-600 tracking-wider">UZE</div>
+            <div class="hidden md:flex items-center space-x-10 text-sm font-bold">
+                <a href="index.html" class="text-slate-600 hover:text-red-600 transition">首页</a>
+                <a href="about.html" class="text-slate-600 hover:text-red-600 transition">关于优泽</a>
+                <a href="capabilities.html" class="text-red-600 border-b-2 border-red-600 pb-1">运营能力</a>
+                <a href="brands.html" class="text-slate-600 hover:text-red-600 transition">合作品牌</a>
+                <a href="contact.html" class="bg-red-600 text-white px-5 py-2 rounded-full hover:bg-red-700 transition">合作洽谈</a>
+            </div>
+            <button type="button" class="md:hidden w-10 h-10 rounded-full border border-red-100 bg-white/80 text-red-600 text-xl font-bold shadow-sm" aria-label="打开菜单" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">☰</button>
+            <div id="mobile-menu" class="hidden md:hidden absolute left-0 right-0 top-full mt-3 rounded-2xl bg-white/95 backdrop-blur-xl border border-red-100 shadow-xl p-3 text-sm font-bold">
+                <a href="index.html" class="block px-4 py-3 rounded-xl text-slate-700 hover:bg-red-50 hover:text-red-600">首页</a>
+                <a href="about.html" class="block px-4 py-3 rounded-xl text-slate-700 hover:bg-red-50 hover:text-red-600">关于优泽</a>
+                <a href="capabilities.html" class="block px-4 py-3 rounded-xl bg-red-50 text-red-600">运营能力</a>
+                <a href="brands.html" class="block px-4 py-3 rounded-xl text-slate-700 hover:bg-red-50 hover:text-red-600">合作品牌</a>
+                <a href="contact.html" class="block px-4 py-3 rounded-xl text-slate-700 hover:bg-red-50 hover:text-red-600">合作洽谈</a>
+            </div>
+        </nav>
+    </div>
+
+    <section class="pt-44 pb-20 px-6 max-w-6xl mx-auto text-center">
+        <div class="inline-block px-4 py-1 rounded-full bg-red-50 text-red-600 text-sm font-bold tracking-widest uppercase mb-6 border border-red-100">Our Operational Strengths</div>
+        <h1 class="text-5xl md:text-7xl font-black tracking-tight mb-8 text-slate-900 leading-tight">用近30年沉淀的体系力，<br/>让大牌方案<span class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-rose-500">在终端完美着陆</span>。</h1>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 mb-16">
+        <div class="dark-module p-8 md:p-16 flex flex-col lg:flex-row gap-12 items-center group">
+            <div class="w-full lg:w-1/2">
+                <div class="text-red-500 font-toy text-xl mb-4">CAPABILITY 01</div>
+                <h2 class="text-4xl font-bold mb-6 text-white">多维全场景渠道网络布局</h2>
+                <p class="text-slate-400 mb-8 leading-relaxed">优泽针对不同商圈属性精细化匹配货盘。建立起立体交叉的分销生态网络，确保正版好玩具无孔不入触达核心消费者。</p>
+                <ul class="check-list">
+                    <li><strong class="text-white">文化零售与乐园：</strong>深度入驻西西弗书店、川渝欢乐谷，精准锁定高净值文旅亲子客群。</li>
+                    <li><strong class="text-white">主流商超系统筑底：</strong>依托重百、新世纪百货等巨头，构建极其稳固的常态化大铺货基础盘（见右侧实拍图）。</li>
+                </ul>
+            </div>
+            <div class="w-full lg:w-1/2 img-box rounded-2xl border border-slate-700 shadow-xl">
+                <img src="微信图片_20260611150334_176_6.jpg" alt="肯特和可可品牌展示" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 mb-16">
+        <div class="text-center mb-12">
+            <div class="text-red-500 font-toy text-xl mb-3">CAPABILITY 02</div>
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900">严苛的终端视觉与品类陈列赋能</h2>
+            <p class="text-slate-500 max-w-3xl mx-auto mt-4">优泽将直营实战沉淀的“金牌视觉陈列守则”，百分百赋能给下游渠道，瞬间拉高货架坪效。</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 group">
+            <div class="feature-card p-4 flex flex-col justify-between">
+                <div class="img-box rounded-xl h-64"><img src="a038697ab2ea87e36e0d1d3e33c80b4c.jpg" alt="森宝积木军事主题视觉墙" class="w-full h-full object-cover"></div>
+                <div class="pt-4">
+                    <h4 class="font-bold text-slate-900 mb-2">国潮/军事大跨度视觉墙</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">实拍森宝积木展示区：大色块强冲击力堆叠，顶置透光灯箱瞬间锁死极客视线。</p>
+                </div>
+            </div>
+            <div class="feature-card p-4 flex flex-col justify-between">
+                <div class="img-box rounded-xl h-64"><img src="d075e492fff2493c61c99ac1e43b4e97.jpg" alt="超级飞侠主题终端陈列" class="w-full h-full object-cover"></div>
+                <div class="pt-4">
+                    <h4 class="font-bold text-slate-900 mb-2">定制级沉浸分区与地垫</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">实拍锦佳货架：根据儿童视线定制赛道主题高清地垫，极力拉长拿取体验时长。</p>
+                </div>
+            </div>
+            <div class="feature-card p-4 flex flex-col justify-between">
+                <div class="img-box rounded-xl h-64"><img src="026dd0bd8817116c0289c3f23d108a50.jpg" alt="多美卡主题门店展示" class="w-full h-full object-cover"></div>
+                <div class="pt-4">
+                    <h4 class="font-bold text-slate-900 mb-2">高奢级发光玻璃藏柜</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">实拍多美卡灯箱：独立内嵌高显色白光LED柜，尽展车模细节，创造收藏级高溢价质感。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 茶园仓库板块：文字说明已经备好，预留图片位 -->
+    <section class="max-w-6xl mx-auto px-6 mb-20">
+        <div class="feature-card overflow-hidden">
+            <div class="flex flex-col lg:flex-row">
+                <div class="w-full lg:w-5/12 bg-slate-900 p-8 md:p-16 flex flex-col justify-center">
+                    <div class="text-red-500 font-toy text-xl mb-4">CAPABILITY 03</div>
+                    <h2 class="text-4xl font-bold text-white mb-6">1800㎡ 茶园智配中心</h2>
+                    <p class="text-slate-300 mb-8 leading-relaxed">位于南岸区茶园金开电商产业园一期。自有专职运力配送车队，数字化精细效期管控，高效支撑大宗流通及直营零售网点的快速补货。</p>
+                </div>
+                <div class="w-full lg:w-7/12">
+                    <img src="微信图片_20260611150712_177_6.jpg" alt="茶园智配中心仓储实拍" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center py-16 px-6 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-slate-900 mb-6">寻找西南最具执行力的供应链后盾？</h2>
+        <button onclick="openModal()" class="inline-block bg-red-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-red-700 transition shadow-xl shadow-red-200">立即获取专属渠道方案</button>
+    </section>
+
+    <div id="contactModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center">
+        <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" onclick="closeModal()"></div>
+        <div class="relative bg-white p-8 md:p-12 rounded-[2rem] shadow-2xl max-w-sm w-full mx-6 transform scale-95 opacity-0 transition-all duration-300 ease-out" id="modalContent">
+            <button onclick="closeModal()" class="absolute top-5 right-6 text-slate-400 hover:text-red-600 text-3xl font-light transition">&times;</button>
+            <div class="text-center">
+                <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center text-red-600 text-3xl mx-auto mb-4">📞</div>
+                <h3 class="text-2xl font-bold text-slate-900 mb-2">专属渠道合作</h3>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 mb-6">
+                    <p class="text-sm text-slate-400 mb-2">业务负责人 · 邹总</p>
+                    <p class="text-3xl font-toy font-bold text-red-600 tracking-wider">13896180999</p>
+                </div>
+                <a href="tel:13896180999" class="w-full block bg-slate-900 text-white py-4 rounded-xl font-bold hover:bg-red-600 transition shadow-lg">立即拨打</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-full pt-8 pb-6 border-t border-slate-200 text-center bg-white"><p class="text-sm text-slate-500 font-medium">© 2026 重庆优泽玩具商贸有限公司. All rights reserved.</p></footer>
+
+    <script>
+        function openModal() {
+            const modal = document.getElementById('contactModal'); const content = document.getElementById('modalContent');
+            modal.classList.remove('hidden'); setTimeout(() => { content.classList.remove('scale-95', 'opacity-0'); content.classList.add('scale-100', 'opacity-100'); }, 10);
+        }
+        function closeModal() {
+            const modal = document.getElementById('contactModal'); const content = document.getElementById('modalContent');
+            content.classList.remove('scale-100', 'opacity-100'); content.classList.add('scale-95', 'opacity-0'); setTimeout(() => { modal.classList.add('hidden'); }, 300);
+        }
+    </script>
+</body>
+</html>
